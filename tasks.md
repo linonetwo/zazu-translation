@@ -1,0 +1,2 @@
+- add page for empty search results (show similar)
+- change prefix to target language (since its not configurable?)

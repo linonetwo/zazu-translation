@@ -1,0 +1,39 @@
+{
+  "name": "zazu-leo",
+  "version": "0.0.1",
+  "description": "Search for words by word",
+  "icon": "",
+  "blocks": {
+    "input": [
+      {
+        "id": "input",
+        "type": "PrefixScript",
+        "space": true,
+        "args": "Required",
+        "prefix": "leo",
+        "script": "zazu/translate.js",
+        "connections": [
+          "copy"
+        ]
+      },
+      {
+        "id": "input",
+        "type": "PrefixScript",
+        "space": true,
+        "args": "Required",
+        "prefix": "syn",
+        "script": "zazu/synonym.js",
+        "connections": [
+          "copy"
+        ]
+      }
+    ],
+    "output": [
+      {
+        "id": "copy",
+        "type": "CopyToClipboard",
+        "text": "{value}"
+      }
+    ]
+  }
+}
