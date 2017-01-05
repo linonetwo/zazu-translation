@@ -25,12 +25,13 @@ In case of missing search results, either similar valid words or no items will b
 
 ## Installation
 
-Add the following to your `~/.zazurc.json`
+Add `"sagold/zazu-dict"` to your `~/.zazurc.json` plugins, like:
 
 ```json
 {
     "plugins": [
         "sagold/zazu-dict"
+    ]
 }
 ```
 
