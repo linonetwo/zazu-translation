@@ -5,18 +5,104 @@
   "icon": "",
   "blocks": {
     "input": [
+        {
+        "title": "translate chinese <-> german",
+          "id": "input",
+          "type": "PrefixScript",
+          "space": true,
+          "args": "Required",
+          "prefix": "ch",
+          "script": "zazu/ch.js",
+          "connections": [
+            "copy"
+          ]
+        },
       {
+        "title": "translate english <-> german",
         "id": "input",
         "type": "PrefixScript",
         "space": true,
         "args": "Required",
-        "prefix": "leo",
-        "script": "zazu/translate.js",
+        "prefix": "en",
+        "script": "zazu/en.js",
         "connections": [
           "copy"
         ]
       },
       {
+        "title": "translate spanish <-> german",
+        "id": "input",
+        "type": "PrefixScript",
+        "space": true,
+        "args": "Required",
+        "prefix": "es",
+        "script": "zazu/es.js",
+        "connections": [
+          "copy"
+        ]
+      },
+      {
+        "title": "translate french <-> german",
+        "id": "input",
+        "type": "PrefixScript",
+        "space": true,
+        "args": "Required",
+        "prefix": "fr",
+        "script": "zazu/fr.js",
+        "connections": [
+          "copy"
+        ]
+      },
+      {
+        "title": "translate italian <-> german",
+        "id": "input",
+        "type": "PrefixScript",
+        "space": true,
+        "args": "Required",
+        "prefix": "it",
+        "script": "zazu/it.js",
+        "connections": [
+          "copy"
+        ]
+      },
+      {
+        "title": "translate polish <-> german",
+        "id": "input",
+        "type": "PrefixScript",
+        "space": true,
+        "args": "Required",
+        "prefix": "pl",
+        "script": "zazu/pl.js",
+        "connections": [
+          "copy"
+        ]
+      },
+      {
+        "title": "translate portuguese <-> german",
+        "id": "input",
+        "type": "PrefixScript",
+        "space": true,
+        "args": "Required",
+        "prefix": "pt",
+        "script": "zazu/pt.js",
+        "connections": [
+          "copy"
+        ]
+      },
+      {
+        "title": "translate russian <-> german",
+        "id": "input",
+        "type": "PrefixScript",
+        "space": true,
+        "args": "Required",
+        "prefix": "ru",
+        "script": "zazu/ru.js",
+        "connections": [
+          "copy"
+        ]
+      },
+      {
+        "title": "search for synonyms",
         "id": "input",
         "type": "PrefixScript",
         "space": true,

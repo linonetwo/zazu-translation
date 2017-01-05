@@ -1,7 +1,7 @@
 const synonyms = require("../lib/dict/synonyms");
 
 
-module.exports = (pluginContext) => {
+module.exports = (pluginContext) => { // eslint-disable-line
 
     /**
      * @async

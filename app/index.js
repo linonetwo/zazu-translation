@@ -14,8 +14,13 @@ program
             if (results.length === 0) {
                 console.log("no results found for \033\[0;34m'search'\033\[0m. It may be of wrong language"); // eslint-disable-line
             } else {
-                // results.forEach((word, index) => console.log(`${index}: ${word}`));
-                results.forEach((trans, index) => process.stdout.write(`${trans.from} -> ${trans.to}\n`));
+                results.forEach((trans, index) => {
+                    if (trans.from) {
+                        process.stdout.write(`${trans.from} -> ${trans.to}\n`);
+                    } else {
+                        process.stdout.write(`${trans}\n`);
+                    }
+                });
             }
         })
     );
@@ -29,7 +34,6 @@ program
             if (results.length === 0) {
                 console.log("no results found for \033\[0;34m'search'\033\[0m. It may be of wrong language"); // eslint-disable-line
             } else {
-                // results.forEach((word, index) => console.log(`${index}: ${word}`));
                 results.forEach((trans, index) => process.stdout.write(`${trans}\n`));
             }
         })
