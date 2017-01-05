@@ -1,7 +1,7 @@
 {
-  "name": "zazu-leo",
-  "version": "0.0.1",
-  "description": "Search for words by word",
+  "name": "zazu-dict",
+  "version": "1.0.0",
+  "description": "Search synonyms or translate words from german <-> english (and others)",
   "icon": "",
   "blocks": {
     "input": [
