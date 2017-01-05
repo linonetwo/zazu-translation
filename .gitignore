@@ -22,6 +22,7 @@ atlassian-ide-plugin.xml
 /build/
 /dist/
 /config/
+/misc/
 
 *-test-results.xml
 /xunit.xml
