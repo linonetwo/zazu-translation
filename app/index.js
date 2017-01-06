@@ -3,8 +3,6 @@ const program = require("commander");
 const translate = require("../lib/dict/translate");
 const synonyms = require("../lib/dict/synonyms");
 
-// process.env.DEBUG = true;
-
 program
     .command("t <word>")
     .description("get word translations")

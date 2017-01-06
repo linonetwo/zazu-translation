@@ -5,7 +5,7 @@
       "dict": "app/index.js"
   },
   "description": "Search synonyms or translate words from german <-> english (and others)",
-  "main": "leo.js",
+  "main": "app/index.js",
   "scripts": {
     "rebuild": "electron-rebuild --version 1.3.1"
   },

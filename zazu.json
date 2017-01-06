@@ -2,7 +2,8 @@
   "name": "zazu-dict",
   "version": "1.0.0",
   "description": "Search synonyms or translate words from german <-> english (and others)",
-  "icon": "",
+  "icon": "./dictionary.png",
+  "stylesheet": "zazu/zazu-dict.css",
   "blocks": {
     "input": [
         {
