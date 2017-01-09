@@ -2,7 +2,7 @@
   "name": "zazu-dict",
   "version": "1.1.0",
   "bin": {
-      "dict": "app/index.js"
+    "dict": "app/index.js"
   },
   "description": "Search synonyms or translate words from german <-> english (and others)",
   "main": "app/index.js",
@@ -16,7 +16,7 @@
     "gson-pointer": "^1.0.4",
     "gson-query": "^1.1.0",
     "request": "^2.79.0",
-    "xml2json": "^0.10.0"
+    "xml2js": "^0.4.17"
   },
   "devDependencies": {
     "bluebird": "^3.4.7",

@@ -6,7 +6,7 @@
 *.zip
 *.tmp
 .DS_Store
-response.json
+*response*.json
 Thumbs.db
 
 node_modules/
