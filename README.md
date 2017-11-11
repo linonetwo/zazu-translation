@@ -3,7 +3,9 @@
 > for synonyms and translation of german <-> english (and others).
 
 ---
+
 **THIS REPOSITORY IS NO LONGER MAINTAINED**
+
 ---
 
 ## Usage
