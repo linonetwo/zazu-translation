@@ -2,6 +2,9 @@
 
 > for synonyms and translation of german <-> english (and others).
 
+> **THIS REPOSITORY IS NO LONGREAD MAINTAINED**
+
+
 ## Usage
 
 Start a query with any supported language (`ch`, `en`, `es`, `fr`, `it`, `pl`, `pt`, `ru`). i.e.
