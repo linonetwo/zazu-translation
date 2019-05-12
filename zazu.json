@@ -6,113 +6,103 @@
   "stylesheet": "zazu/zazu-dict.css",
   "blocks": {
     "input": [
-        {
-        "title": "translate chinese",
-          "id": "input",
-          "type": "PrefixScript",
-          "space": true,
-          "args": "Required",
-          "prefix": "ch",
-          "script": "zazu/ch.js",
-          "connections": [
-            "copy"
-          ]
-        },
       {
-        "title": "translate english",
-        "id": "input",
+        "title": "translate to chinese",
+        "type": "PrefixScript",
+        "space": true,
+        "args": "Required",
+        "prefix": "cn",
+        "script": "zazu/cn.js",
+        "debounce": 100,
+        "connections": ["copy"]
+      },
+      {
+        "title": "translate to japanese",
+        "id": "Translation-japanese",
+        "type": "PrefixScript",
+        "space": true,
+        "args": "Required",
+        "prefix": "ja",
+        "script": "zazu/ja.js",
+        "debounce": 100,
+        "connections": ["copy"]
+      },
+      {
+        "title": "translate to english",
+        "id": "Translation-english",
         "type": "PrefixScript",
         "space": true,
         "args": "Required",
         "prefix": "en",
         "script": "zazu/en.js",
-        "connections": [
-          "copy"
-        ]
+        "debounce": 100,
+        "connections": ["copy"]
       },
       {
-        "title": "translate spanish",
-        "id": "input",
+        "title": "translate to spanish",
+        "id": "Translation-spanish",
         "type": "PrefixScript",
         "space": true,
         "args": "Required",
         "prefix": "es",
         "script": "zazu/es.js",
-        "connections": [
-          "copy"
-        ]
+        "debounce": 100,
+        "connections": ["copy"]
       },
       {
-        "title": "translate french",
-        "id": "input",
+        "title": "translate to french",
+        "id": "Translation-french",
         "type": "PrefixScript",
         "space": true,
         "args": "Required",
         "prefix": "fr",
         "script": "zazu/fr.js",
-        "connections": [
-          "copy"
-        ]
+        "debounce": 100,
+        "connections": ["copy"]
       },
       {
-        "title": "translate italian",
-        "id": "input",
+        "title": "translate to italian",
+        "id": "Translation-italian",
         "type": "PrefixScript",
         "space": true,
         "args": "Required",
         "prefix": "it",
         "script": "zazu/it.js",
-        "connections": [
-          "copy"
-        ]
+        "debounce": 100,
+        "connections": ["copy"]
       },
       {
-        "title": "translate polish",
-        "id": "input",
+        "title": "translate to polish",
+        "id": "Translation-polish",
         "type": "PrefixScript",
         "space": true,
         "args": "Required",
         "prefix": "pl",
         "script": "zazu/pl.js",
-        "connections": [
-          "copy"
-        ]
+        "debounce": 100,
+        "connections": ["copy"]
       },
       {
-        "title": "translate portuguese",
-        "id": "input",
+        "title": "translate to portuguese",
+        "id": "Translation-portuguese",
         "type": "PrefixScript",
         "space": true,
         "args": "Required",
         "prefix": "pt",
         "script": "zazu/pt.js",
-        "connections": [
-          "copy"
-        ]
+        "debounce": 100,
+        "connections": ["copy"]
       },
       {
-        "title": "translate russian",
-        "id": "input",
+        "title": "translate to russian",
+        "id": "Translation-russian",
         "type": "PrefixScript",
         "space": true,
         "args": "Required",
         "prefix": "ru",
         "script": "zazu/ru.js",
-        "connections": [
-          "copy"
-        ]
-      },
-      {
-        "title": "search for synonyms",
-        "id": "input",
-        "type": "PrefixScript",
-        "space": true,
-        "args": "Required",
-        "prefix": "syn",
-        "script": "zazu/synonym.js",
-        "connections": [
-          "copy"
-        ]
+        "debounce": 100,
+        "connections": ["copy"]
       }
     ],
     "output": [
