@@ -1,6 +1,6 @@
 const FLAG_ICONS = {
-  'zh-CN': '🇨🇳',
-  'zh-TW': '🇨🇳',
+  cn: '🇨🇳',
+  tw: '🇨🇳',
   de: '🇩🇪',
   en: '🇬🇧',
   es: '🇪🇸',
