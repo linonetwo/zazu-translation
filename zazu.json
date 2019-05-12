@@ -2,7 +2,7 @@
   "name": "zazu-translation",
   "version": "1.1.1",
   "description": "Translation and optionally add to Anki",
-  "icon": "./dictionary.png",
+  "icon": "./translation.png",
   "stylesheet": "zazu/zazu-dict.css",
   "blocks": {
     "input": [
