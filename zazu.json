@@ -8,6 +8,7 @@
     "input": [
       {
         "title": "translate to chinese",
+        "id": "translation-chinese",
         "type": "PrefixScript",
         "space": true,
         "args": "Required",
@@ -18,6 +19,7 @@
       },
       {
         "title": "translate to traditional chinese",
+        "id": "translation-traditional-chinese",
         "type": "PrefixScript",
         "space": true,
         "args": "Required",
@@ -28,7 +30,7 @@
       },
       {
         "title": "translate to japanese",
-        "id": "Translation-japanese",
+        "id": "translation-japanese",
         "type": "PrefixScript",
         "space": true,
         "args": "Required",
@@ -39,7 +41,7 @@
       },
       {
         "title": "translate to english",
-        "id": "Translation-english",
+        "id": "translation-english",
         "type": "PrefixScript",
         "space": true,
         "args": "Required",
@@ -50,7 +52,7 @@
       },
       {
         "title": "translate to spanish",
-        "id": "Translation-spanish",
+        "id": "translation-spanish",
         "type": "PrefixScript",
         "space": true,
         "args": "Required",
@@ -61,7 +63,7 @@
       },
       {
         "title": "translate to french",
-        "id": "Translation-french",
+        "id": "translation-french",
         "type": "PrefixScript",
         "space": true,
         "args": "Required",
@@ -72,7 +74,7 @@
       },
       {
         "title": "translate to italian",
-        "id": "Translation-italian",
+        "id": "translation-italian",
         "type": "PrefixScript",
         "space": true,
         "args": "Required",
@@ -83,7 +85,7 @@
       },
       {
         "title": "translate to polish",
-        "id": "Translation-polish",
+        "id": "translation-polish",
         "type": "PrefixScript",
         "space": true,
         "args": "Required",
@@ -94,7 +96,7 @@
       },
       {
         "title": "translate to portuguese",
-        "id": "Translation-portuguese",
+        "id": "translation-portuguese",
         "type": "PrefixScript",
         "space": true,
         "args": "Required",
@@ -105,7 +107,7 @@
       },
       {
         "title": "translate to russian",
-        "id": "Translation-russian",
+        "id": "translation-russian",
         "type": "PrefixScript",
         "space": true,
         "args": "Required",
