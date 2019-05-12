@@ -32,7 +32,7 @@ module.exports = pluginContext => {
       },
     };
     pluginContext.console.log('warn', 'adding to anki', params);
-    return fetch(`localhost:${env.ankiPort || 8765}`, {
+    return fetch(`http://localhost:${env.ankiPort || 8765}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
