@@ -14,7 +14,7 @@ module.exports = function translation(query, to = 'en', pluginContext) {
         pluginContext.console.log('warn', 'finish translation', {
           raw: query,
           result: result.text,
-          from: result.from.language.iso,
+          from: result.from.language.iso.replace('zh-CN', 'cn').replace('zh-TW', 'tw'),
           to,
         });
         return [{ raw: query, result: result.text, from: result.from.language.iso, to }];
@@ -26,7 +26,14 @@ module.exports = function translation(query, to = 'en', pluginContext) {
           from: result.from,
           to,
         });
-        return [{ raw: query, result: result.trans_result.dst, from: result.from, to }];
+        return [
+          {
+            raw: query,
+            result: result.trans_result.dst,
+            from: result.from.replace('zh', 'cn').replace('cht', 'tw'),
+            to,
+          },
+        ];
       }),
     ]),
     3000,
