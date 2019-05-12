@@ -14,9 +14,43 @@ Add `"linonetwo/zazu-translation"` to your `~/.zazurc.json` plugins, like:
 
 ```json
 {
-    "plugins": ["linonetwo/zazu-translation"]
+  "plugins": ["linonetwo/zazu-translation"]
 }
 ```
+
+or with config variables:
+
+```json
+{
+  "hotkey": "alt+space",
+  "theme": "tinytacoteam/zazu-light-theme",
+  "displayOn": "detect",
+  "plugins": [
+    {
+      "name": "linonetwo/zazu-translation",
+      "variables": {
+        "anki": "true",
+        "deckName": "English",
+        "modelName": "基础",
+        "fields": {
+          "raw": "正面",
+          "result": "背面"
+        }
+      }
+    },
+    "other-plugins"
+  ]
+}
+```
+
+### Add to Anki
+
+First, make sure you have [anki-connect](https://foosoft.net/projects/anki-connect/) installed, then set `variables` in the `~/.zazurc.json`:
+
+- `anki` set to `true`
+- `deckName` make sure it exists and not misspelled
+- `modelName` the card type you are going to use
+- `fields` mapping from `raw` and `result` to the fields in your model
 
 ## Disclaimer
 
