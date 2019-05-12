@@ -1,13 +1,13 @@
 {
-  "name": "zazu-dict",
+  "name": "zazu-translation",
   "version": "1.1.1",
-  "description": "Search synonyms or translate words from german <-> english (and others)",
+  "description": "Translation and optionally add to Anki",
   "icon": "./dictionary.png",
   "stylesheet": "zazu/zazu-dict.css",
   "blocks": {
     "input": [
         {
-        "title": "translate chinese <-> german",
+        "title": "translate chinese",
           "id": "input",
           "type": "PrefixScript",
           "space": true,
@@ -19,7 +19,7 @@
           ]
         },
       {
-        "title": "translate english <-> german",
+        "title": "translate english",
         "id": "input",
         "type": "PrefixScript",
         "space": true,
@@ -31,7 +31,7 @@
         ]
       },
       {
-        "title": "translate spanish <-> german",
+        "title": "translate spanish",
         "id": "input",
         "type": "PrefixScript",
         "space": true,
@@ -43,7 +43,7 @@
         ]
       },
       {
-        "title": "translate french <-> german",
+        "title": "translate french",
         "id": "input",
         "type": "PrefixScript",
         "space": true,
@@ -55,7 +55,7 @@
         ]
       },
       {
-        "title": "translate italian <-> german",
+        "title": "translate italian",
         "id": "input",
         "type": "PrefixScript",
         "space": true,
@@ -67,7 +67,7 @@
         ]
       },
       {
-        "title": "translate polish <-> german",
+        "title": "translate polish",
         "id": "input",
         "type": "PrefixScript",
         "space": true,
@@ -79,7 +79,7 @@
         ]
       },
       {
-        "title": "translate portuguese <-> german",
+        "title": "translate portuguese",
         "id": "input",
         "type": "PrefixScript",
         "space": true,
@@ -91,7 +91,7 @@
         ]
       },
       {
-        "title": "translate russian <-> german",
+        "title": "translate russian",
         "id": "input",
         "type": "PrefixScript",
         "space": true,
