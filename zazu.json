@@ -15,7 +15,7 @@
         "prefix": "cn",
         "script": "src/cn.js",
         "debounce": 100,
-        "connections": ["add-to-anki"]
+        "connections": ["copy", "add-to-anki"]
       },
       {
         "title": "translate to traditional chinese",
@@ -26,7 +26,7 @@
         "prefix": "tw",
         "script": "src/tw.js",
         "debounce": 100,
-        "connections": ["copy"]
+        "connections": ["copy", "add-to-anki"]
       },
       {
         "title": "translate to japanese",
@@ -37,7 +37,7 @@
         "prefix": "ja",
         "script": "src/ja.js",
         "debounce": 100,
-        "connections": ["copy"]
+        "connections": ["copy", "add-to-anki"]
       },
       {
         "title": "translate to english",
@@ -48,7 +48,7 @@
         "prefix": "en",
         "script": "src/en.js",
         "debounce": 100,
-        "connections": ["copy"]
+        "connections": ["copy", "add-to-anki"]
       },
       {
         "title": "translate to spanish",
@@ -59,7 +59,7 @@
         "prefix": "es",
         "script": "src/es.js",
         "debounce": 100,
-        "connections": ["copy"]
+        "connections": ["copy", "add-to-anki"]
       },
       {
         "title": "translate to french",
@@ -70,7 +70,7 @@
         "prefix": "fr",
         "script": "src/fr.js",
         "debounce": 100,
-        "connections": ["copy"]
+        "connections": ["copy", "add-to-anki"]
       },
       {
         "title": "translate to italian",
@@ -81,7 +81,7 @@
         "prefix": "it",
         "script": "src/it.js",
         "debounce": 100,
-        "connections": ["copy"]
+        "connections": ["copy", "add-to-anki"]
       },
       {
         "title": "translate to polish",
@@ -92,7 +92,7 @@
         "prefix": "pl",
         "script": "src/pl.js",
         "debounce": 100,
-        "connections": ["copy"]
+        "connections": ["copy", "add-to-anki"]
       },
       {
         "title": "translate to portuguese",
@@ -103,7 +103,7 @@
         "prefix": "pt",
         "script": "src/pt.js",
         "debounce": 100,
-        "connections": ["copy"]
+        "connections": ["copy", "add-to-anki"]
       },
       {
         "title": "translate to russian",
@@ -114,7 +114,7 @@
         "prefix": "ru",
         "script": "src/ru.js",
         "debounce": 100,
-        "connections": ["copy"]
+        "connections": ["copy", "add-to-anki"]
       }
     ],
     "output": [
