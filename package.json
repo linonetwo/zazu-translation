@@ -1,11 +1,8 @@
 {
   "name": "zazu-translation",
-  "version": "1.0.0",
-  "bin": {
-    "dict": "app/index.js"
-  },
-  "description": "Search synonyms or translate words from german <-> english (and others)",
-  "main": "app/index.js",
+  "version": "1.0.1",
+  "description": "Translate and optionally add to anki",
+  "main": "src/utils/translation.js",
   "scripts": {
     "test": "node ./src/cn.js"
   },

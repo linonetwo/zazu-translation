@@ -1,5 +1,7 @@
 # [Zazu](https://github.com/tinytacoteam/zazu) translation
 
+Translate and optionally add to anki
+
 ## Usage
 
 Start a query with any supported language (`ch`, `en`, `es`, `fr`, `it`, `pl`, `pt`, `ru`). i.e.
