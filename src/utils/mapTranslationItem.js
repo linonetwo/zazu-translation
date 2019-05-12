@@ -1,6 +1,6 @@
 const FLAG_ICONS = {
-  cn: '🇨🇳',
-  tw: '🇨🇳',
+  'zh-CN': '🇨🇳',
+  'zh-TW': '🇨🇳',
   de: '🇩🇪',
   en: '🇬🇧',
   es: '🇪🇸',
@@ -13,12 +13,12 @@ const FLAG_ICONS = {
   '': '',
 };
 
-module.exports = function mapTranslationItem({ raw, result, from, to }, index) {
+module.exports = function mapTranslationItem({ raw, result, from = '', to }, index) {
   return {
-    id: index,
+    id: `a-translation-${index}`,
     title: result,
     value: result,
     subtitle: `${FLAG_ICONS[from]} ${raw}`,
-    icon: `./zazu/assets/${to || 'x'}.svg`,
+    icon: `./src/assets/${to || 'x'}.svg`,
   };
 };
