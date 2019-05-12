@@ -31,7 +31,7 @@ module.exports = function translation(query, to = 'en', pluginContext) {
   });
 
   const baiduPromise = timeout(
-    baiduTranslate(query, { to: to.replace('cn', 'zh').replace('tw', 'cht') }).then(result => {
+    baiduTranslate(query.toLowerCase(), { to: to.replace('cn', 'zh').replace('tw', 'cht') }).then(result => {
       pluginContext.console.log('warn', 'finish translation', {
         raw: query,
         result: result.trans_result.dst,
