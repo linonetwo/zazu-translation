@@ -13,12 +13,12 @@ const FLAG_ICONS = {
   '': '',
 };
 
-module.exports = function mapTranslationItem({ raw, result, from = '', to }, index) {
+module.exports = function mapTranslationItem({ service, raw, result, from = '', to }, index) {
   return {
     id: `a-translation-${index}`,
     title: result,
     value: JSON.stringify({ raw, result }, null, '  '),
-    subtitle: `${FLAG_ICONS[from]} ${raw}`,
+    subtitle: `${service} ${FLAG_ICONS[from]} ${raw}`,
     icon: `./src/assets/${to || 'x'}.svg`,
   };
 };
