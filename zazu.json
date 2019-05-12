@@ -15,7 +15,7 @@
         "prefix": "cn",
         "script": "src/cn.js",
         "debounce": 100,
-        "connections": ["copy"]
+        "connections": ["add-to-anki"]
       },
       {
         "title": "translate to traditional chinese",
@@ -120,8 +120,19 @@
     "output": [
       {
         "id": "copy",
+        "type": "UserScript",
+        "script": "src/utils/getResult.js",
+        "connections": ["copy-to-clipboard"]
+      },
+      {
+        "id": "copy-to-clipboard",
         "type": "CopyToClipboard",
         "text": "{value}"
+      },
+      {
+        "id": "add-to-anki",
+        "type": "UserScript",
+        "script": "src/utils/addToAnki.js"
       }
     ]
   }
