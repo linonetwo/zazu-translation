@@ -52,6 +52,8 @@ First, make sure you have [anki-connect](https://foosoft.net/projects/anki-conne
 - `modelName` the card type you are going to use
 - `fields` mapping from `raw` and `result` to the fields in your model
 
+Make sure your Anki is open in the background, otherwise this plugin won't work.
+
 ## Disclaimer
 
 This is a [zazu](https://github.com/tinytacoteam/zazu) plugin and I've reuse the code from [sagold/zazu-dict](https://github.com/sagold/zazu-dict)
