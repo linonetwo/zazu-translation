@@ -17,6 +17,16 @@
         "connections": ["copy"]
       },
       {
+        "title": "translate to traditional chinese",
+        "type": "PrefixScript",
+        "space": true,
+        "args": "Required",
+        "prefix": "tw",
+        "script": "src/tw.js",
+        "debounce": 100,
+        "connections": ["copy"]
+      },
+      {
         "title": "translate to japanese",
         "id": "Translation-japanese",
         "type": "PrefixScript",
