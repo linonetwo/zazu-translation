@@ -12,7 +12,7 @@
         "space": true,
         "args": "Required",
         "prefix": "cn",
-        "script": "zazu/cn.js",
+        "script": "src/cn.js",
         "debounce": 100,
         "connections": ["copy"]
       },
@@ -23,7 +23,7 @@
         "space": true,
         "args": "Required",
         "prefix": "ja",
-        "script": "zazu/ja.js",
+        "script": "src/ja.js",
         "debounce": 100,
         "connections": ["copy"]
       },
@@ -34,7 +34,7 @@
         "space": true,
         "args": "Required",
         "prefix": "en",
-        "script": "zazu/en.js",
+        "script": "src/en.js",
         "debounce": 100,
         "connections": ["copy"]
       },
@@ -45,7 +45,7 @@
         "space": true,
         "args": "Required",
         "prefix": "es",
-        "script": "zazu/es.js",
+        "script": "src/es.js",
         "debounce": 100,
         "connections": ["copy"]
       },
@@ -56,7 +56,7 @@
         "space": true,
         "args": "Required",
         "prefix": "fr",
-        "script": "zazu/fr.js",
+        "script": "src/fr.js",
         "debounce": 100,
         "connections": ["copy"]
       },
@@ -67,7 +67,7 @@
         "space": true,
         "args": "Required",
         "prefix": "it",
-        "script": "zazu/it.js",
+        "script": "src/it.js",
         "debounce": 100,
         "connections": ["copy"]
       },
@@ -78,7 +78,7 @@
         "space": true,
         "args": "Required",
         "prefix": "pl",
-        "script": "zazu/pl.js",
+        "script": "src/pl.js",
         "debounce": 100,
         "connections": ["copy"]
       },
@@ -89,7 +89,7 @@
         "space": true,
         "args": "Required",
         "prefix": "pt",
-        "script": "zazu/pt.js",
+        "script": "src/pt.js",
         "debounce": 100,
         "connections": ["copy"]
       },
@@ -100,7 +100,7 @@
         "space": true,
         "args": "Required",
         "prefix": "ru",
-        "script": "zazu/ru.js",
+        "script": "src/ru.js",
         "debounce": 100,
         "connections": ["copy"]
       }
