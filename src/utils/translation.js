@@ -12,6 +12,7 @@ module.exports = function translation(query, to = 'en', pluginContext) {
   const googlePromise = timeout(
     googleTranslate(query, { to: to.replace('cn', 'zh-CN').replace('tw', 'zh-TW') }).then(result => {
       const resultItem = {
+        service: 'google',
         raw: query,
         result: result.text,
         from: result.from.language.iso.replace('zh-CN', 'cn').replace('zh-TW', 'tw'),
