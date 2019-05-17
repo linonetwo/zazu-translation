@@ -31,7 +31,7 @@ module.exports = pluginContext => {
         // },
       },
     };
-    pluginContext.console.log('warn', 'adding to anki', params);
+    pluginContext.console.log('info', 'adding to anki', params);
     return fetch(`http://localhost:${env.ankiPort || 8765}`, {
       method: 'POST',
       headers: {

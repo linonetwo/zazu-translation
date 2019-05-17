@@ -4,24 +4,25 @@ const { timeout, TimeoutError } = require('promise-timeout');
 
 const TIME_OUT = 3000;
 module.exports = function translation(query, to = 'en', pluginContext) {
-  pluginContext.console.log('warn', 'start translation', {
+  pluginContext.console.log('info', 'start translation', {
     query,
     to,
   });
 
   const googlePromise = timeout(
     googleTranslate(query, { to: to.replace('cn', 'zh-CN').replace('tw', 'zh-TW') }).then(result => {
-      pluginContext.console.log('warn', 'finish translation', {
+      const resultItem = {
         raw: query,
         result: result.text,
         from: result.from.language.iso.replace('zh-CN', 'cn').replace('zh-TW', 'tw'),
         to,
-      });
-      return { service: 'google', raw: query, result: result.text, from: result.from.language.iso, to };
+      }
+      pluginContext.console.log('info', 'finish translation', resultItem);
+      return resultItem;
     }),
     TIME_OUT,
   ).catch(error => {
-    pluginContext.console.log('error', 'failed google translation', {
+    pluginContext.console.log('warn', 'failed google translation', {
       error,
     });
     if (error instanceof TimeoutError) {
@@ -32,23 +33,19 @@ module.exports = function translation(query, to = 'en', pluginContext) {
 
   const baiduPromise = timeout(
     baiduTranslate(query.toLowerCase(), { to: to.replace('cn', 'zh').replace('tw', 'cht') }).then(result => {
-      pluginContext.console.log('warn', 'finish translation', {
-        raw: query,
-        result: result.trans_result.dst,
-        from: result.from,
-        to,
-      });
-      return {
+      const resultItem = {
         service: 'baidu',
         raw: query,
         result: result.trans_result.dst,
         from: result.from.replace('zh', 'cn').replace('cht', 'tw'),
         to,
       };
+      pluginContext.console.log('info', 'finish translation', resultItem);
+      return resultItem;
     }),
     TIME_OUT,
   ).catch(error => {
-    pluginContext.console.log('error', 'failed baidu translation', {
+    pluginContext.console.log('warn', 'failed baidu translation', {
       error,
     });
     if (error instanceof TimeoutError) {
