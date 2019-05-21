@@ -10,6 +10,8 @@ For example, `en Schloss` will show possible translations from detected language
 
 ## Screenshots
 
+![screenshot](screenshot.png)
+
 ## Installation
 
 Add `"linonetwo/zazu-translation"` to your `~/.zazurc.json` plugins, like:
